@@ -29,3 +29,99 @@ models:
 
       - name: average_temperature
         description: Average temperature at each weather station by year/month 
+
+      - name: average_max_temperature
+        description: Placeholder 
+
+      - name: average_min_temperature
+        description: Placeholder 
+
+      - name: average_temperature_at_observation_time
+        description: Placeholder 
+
+      - name: average_wind_speed_average
+        description: Placeholder 
+
+      - name: average_peak_gust_time
+        description: Placeholder 
+
+      - name: total_wind_movement_total
+        description: Placeholder 
+
+      - name: average_highest_instantaneous_wind_speed
+        description: Placeholder 
+
+      - name: average_fastest_5_second_wind_speed
+        description: Placeholder 
+
+      - name: average_direction_of_fastest_5_second_wind
+        description: Placeholder 
+
+      - name: average_fastest_2_minute_wind_speed
+        description: Placeholder 
+
+      - name: average_direction_of_fastest_2_minute_wind
+        description: Placeholder 
+
+      - name: total_precipitation
+        description: Placeholder 
+
+      - name: total_precipitation_total
+        description: Placeholder 
+
+      - name: total_days_included_in_precipitation_total
+        description: Placeholder 
+
+      - name: total_evaporation
+        description: Placeholder 
+
+      - name: minimum_daily_min_water_temperature
+        description: Placeholder 
+
+      - name: maximum_daily_max_water_temperature
+        description: Placeholder 
+
+      - name: total_snowfall
+        description: Placeholder 
+
+      - name: total_snow_depth
+        description: Placeholder 
+
+      - name: total_water_equivalent_of_snow_on_ground
+        description: Placeholder 
+
+      - name: total_water_equivalent_of_snowfall
+        description: Placeholder 
+
+      - name: total_instances_of_fog_or_ice_fog_or_freezing_fog
+        description: Placeholder 
+
+      - name: total_instances_of_heavy_fog_or_heaving_freezing_fog
+        description: Placeholder 
+
+      - name: total_instances_of_thunder
+        description: Placeholder 
+
+      - name: total_instances_of_ice_pellets_or_sleet_or_snow_pellets_or_small_hail_flag
+        description: Placeholder 
+
+      - name: total_instances_of_hail
+        description: Placeholder 
+
+      - name: total_instances_of_glaze_or_rime
+        description: Placeholder 
+
+      - name: total_instances_of_dust_or_volcanic_ash_or_blowing_dust_or_blowing_sand_or_blowing_obstruction
+        description: Placeholder 
+
+      - name: total_instances_of_smoke_or_haze
+        description: Placeholder 
+
+      - name: total_instances_of_blowing_or_drifting_snow
+        description: Placeholder 
+
+      - name: total_instances_of_tornado_or_waterspout_or_funnel_cloud
+        description: Placeholder 
+
+      - name: total_instances_of_high_or_damaging_winds
+        description: Placeholder 
