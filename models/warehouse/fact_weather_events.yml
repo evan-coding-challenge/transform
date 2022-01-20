@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: fact_weather_events
+    description: Fact for weather events that happen monthly
+    columns:
+      - name: sk_fact_weather_events
+        description: Unique ID for each row in fact_weather_events  
+        tests:
+            - not_null 
+            - unique
+
+      - name: weather_station_id
+        description: Unique ID for weather stations 
+        tests:
+            - not_null 
+            - unique
+            - relationships:
+                to: ref('dim_weather_station')
+                field: weather_station_id
+
+      - name: date_id
+        description: Unique ID for date days 
+        tests:
+            - not_null 
+            - relationships:
+                to: ref('dim_date')
+                field: date_id
+
+      - name: average_temperature
+        description: Average temperature at each weather station by year/month 

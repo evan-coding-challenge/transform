@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_weather_code
+    description: Dimension for weather codes
+    columns:
+      - name: weather_code_id
+        description: Unique ID for each weather code  
+        tests:
+            - not_null 
+            - unique
+
+      - name: weather_code
+        description: Codes for weather events 
+        tests:
+            - not_null 
+            - unique
+
+      - name: weather_code_name
+        description: Description of weather events 
+        tests:
+            - not_null 

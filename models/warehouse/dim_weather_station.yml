@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_weather_station
+    description: Dimension for weather stations
+    columns:
+      - name: weather_station_id
+        description: Unique ID for each weather station  
+        tests:
+            - not_null 
+            - unique
+
+      - name: weather_station
+        description: Weather station unique code 
+        tests:
+            - not_null 
+            - unique
+
+      - name: weather_station_name
+        description: Identifying name for each weather station 

@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: fact_power_generation
+    description: Fact for power dimension by facility over months (aggregated by year/month)
+    columns:
+      - name: sk_fact_power_generation
+        description: Unique ID for each row in fact_power_generation  
+        tests:
+            - not_null 
+            - unique
+
+      - name: facility_id
+        description: Unique ID for facilities 
+        tests:
+            - not_null 
+            - unique
+            - relationships:
+                to: ref('dim_facility')
+                field: facility_id
+
+      - name: date_id
+        description: Unique ID for date days 
+        tests:
+            - not_null 
+            - relationships:
+                to: ref('dim_date')
+                field: date_id
+
+      - name: facility_kw_rating
+        description: Average KW Rating for the facility for the month 
