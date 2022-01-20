@@ -1,4 +1,4 @@
-Code,Full Name
+Code,Full_Name
 "EVAP","Evaporation of water from evaporation pan"
 "WT03","Thunder"
 "WESF","Water equivalent of snowfall"
@@ -32,4 +32,3 @@ Code,Full Name
 "TMIN","Minimum temperature"
 "MNPN","Daily minimum temperature of water in an evaporation pan"
 "MDPR","Multiday precipitation total (use with DAPR and DWPR, if available)"
-
