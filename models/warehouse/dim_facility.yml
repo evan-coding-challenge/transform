@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_facility
+    description: Dimension for the most recent information for each facility
+    columns:
+      - name: facility_id
+        description: Unique ID for each facility  
+        tests:
+            - not_null 
+            - unique
+
+      - name: facility_name
+        description: Each facility's name 
+
+      - name: facility_kw_rating
+        description: Each facility's KW rating 
+
+      - name: facility_location
+        description: Each facility's location (address, city, state, and long/lat) 
