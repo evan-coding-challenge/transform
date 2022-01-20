@@ -27,5 +27,36 @@ models:
                 to: ref('dim_date')
                 field: date_id
 
+      - name: faulty_meters_flag
+        description: Flag for power stations that have a faulty meter 
+
+      - name: faulty_meters_value
+        description: For power stations with a faulty meter, by what proportion the meter is off
+
       - name: facility_kw_rating
         description: Average KW Rating for the facility for the month 
+
+      - name: total_facility_kwh_generated
+        description: Total KWH generated for the faciity for the month  
+
+      - name: total_facility_generated
+        description: Total generated for the faciity for the month
+
+      - name: average_max_kw_rating
+        description: Average max KW rating for the faciity for the month (to be used for stations with faulty meter)
+
+      - name: total_max_kwh_generated
+        description: Total max KWH generated for the faciity for the month (to be used for stations with faulty meter)
+
+      - name: total_max_generated
+        description: Total max generated for the faciity for the month (to be used for stations with faulty meter)
+
+      - name: average_min_kw_rating
+        description: Average minimum KW rating for the faciity for the month (to be used for stations with faulty meter)
+
+      - name: average_min_kwh_generated
+        description: Average minimum KWH generated for the faciity for the month (to be used for stations with faulty meter)
+
+      - name: average_min_generated
+        description: Average minimum generated for the faciity for the month (to be used for stations with faulty meter)
+

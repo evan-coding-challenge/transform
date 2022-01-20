@@ -8,7 +8,7 @@ with date_spine as (
   }}
 
 )
-, 
+,
 calculated as (
 
     SELECT  
