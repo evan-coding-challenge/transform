@@ -37,14 +37,15 @@ fact_weather_events as (
 final as (
 
     select 
+
         dim_date.date_id,
 
         -- Facts
-        {{ dbt_utils.star(from=ref('fact_power_generation'), except=["date_id", "facility_id"]) }},
         fact_power_generation.facility_id,
+        {{ dbt_utils.star(from=ref('fact_power_generation'), except=["date_id", "facility_id"]) }},
 
-        {{ dbt_utils.star(from=ref('fact_weather_events'), except=["date_id", "weather_station_id"]) }},
         fact_weather_events.weather_station_id,
+        {{ dbt_utils.star(from=ref('fact_weather_events'), except=["date_id", "weather_station_id"]) }},
 
         -- Dims
         {{ dbt_utils.star(from=ref('dim_facility'), except=["facility_id"]) }},

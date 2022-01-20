@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fact_power_reporting
+    description: Aggregated fact for reporting on power and weather events

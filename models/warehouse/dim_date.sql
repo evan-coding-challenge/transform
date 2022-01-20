@@ -3,7 +3,7 @@ with date_spine as (
   {{ dbt_utils.date_spine(
       start_date="to_date('11/01/2009', 'mm/dd/yyyy')",
       datepart="day",
-      end_date="dateadd(year, 40, current_date)"
+      end_date="dateadd(year, 10, current_date)"
      )
   }}
 
