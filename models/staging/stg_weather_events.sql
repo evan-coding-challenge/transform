@@ -59,17 +59,17 @@ final as (
         WESF::number(10,2) as water_equivalent_of_snowfall,
 
         ---- Weather Event Flags ---- 
-        WT01 as fog_or_ice_fog_or_freezing_fog_flag,
-        WT02 as heavy_fog_or_heaving_freezing_fog_flag,
-        WT03 as thunder_flag,
-        WT04 as ice_pellets_or_sleet_or_snow_pellets_or_small_hail_flag,
-        WT05 as hail_flag,
-        WT06 as glaze_or_rime_flag,
-        WT07 as dust_or_volcanic_ash_or_blowing_dust_or_blowing_sand_or_blowing_obstruction_flag,
-        WT08 as smoke_or_haze_flag,
-        WT09 as blowing_or_drifting_snow_flag,
-        WT10 as tornado_or_waterspout_or_funnel_cloud_flag,
-        WT11 as high_or_damaging_winds_flag,
+        coalesce(WT01, 0) as fog_or_ice_fog_or_freezing_fog_flag,
+        coalesce(WT02, 0) as heavy_fog_or_heaving_freezing_fog_flag,
+        coalesce(WT03, 0) as thunder_flag,
+        coalesce(WT04, 0) as ice_pellets_or_sleet_or_snow_pellets_or_small_hail_flag,
+        coalesce(WT05, 0) as hail_flag,
+        coalesce(WT06, 0) as glaze_or_rime_flag,
+        coalesce(WT07, 0) as dust_or_volcanic_ash_or_blowing_dust_or_blowing_sand_or_blowing_obstruction_flag,
+        coalesce(WT08, 0) as smoke_or_haze_flag,
+        coalesce(WT09, 0) as blowing_or_drifting_snow_flag,
+        coalesce(WT10, 0) as tornado_or_waterspout_or_funnel_cloud_flag,
+        coalesce(WT11, 0) as high_or_damaging_winds_flag,
 
         row_number() over (partition by weather_station order by weather_date asc) as is_current_version
 
