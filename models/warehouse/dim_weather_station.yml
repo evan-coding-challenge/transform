@@ -9,7 +9,7 @@ models:
         tests:
             - not_null 
             - unique
-
+ 
       - name: weather_station
         description: Weather station unique code 
         tests:

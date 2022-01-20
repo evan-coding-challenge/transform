@@ -1,0 +1,119 @@
+version: 2
+
+models:
+  - name: stg_weather_events
+    description: Staging table for the weather events CSV file 
+    columns:
+      - name: weather_station
+        description: Placeholder  
+
+      - name: weather_station_name
+        description: Placeholder  
+
+      - name: weather_date
+        description: Placeholder  
+
+      - name: weather_date_year_month
+        description: Placeholder  
+
+      - name: average_temperature
+        description: Placeholder  
+
+      - name: max_temperature
+        description: Placeholder  
+
+      - name: min_temperature
+        description: Placeholder  
+
+      - name: temperature_at_observation_time
+        description: Placeholder  
+
+      - name: average_wind_speed
+        description: Placeholder  
+
+      - name: peak_gust_time
+        description: Placeholder  
+
+      - name: total_wind_movement
+        description: Placeholder  
+
+      - name: highest_instantaneous_wind_speed
+        description: Placeholder  
+
+      - name: fastest_5_second_wind_speed
+        description: Placeholder  
+
+      - name: direction_of_fastest_5_second_wind
+        description: Placeholder  
+
+      - name: fastest_2_minute_wind_speed
+        description: Placeholder  
+
+      - name: direction_of_fastest_2_minute_wind
+        description: Placeholder  
+
+      - name: precipitation
+        description: Placeholder  
+
+      - name: precipitation_total
+        description: Placeholder  
+
+      - name: days_included_in_precipitation_total
+        description: Placeholder  
+
+      - name: evaporation
+        description: Placeholder  
+
+      - name: daily_min_water_temperature
+        description: Placeholder  
+
+      - name: daily_max_water_temperature
+        description: Placeholder  
+
+      - name: snowfall
+        description: Placeholder  
+
+      - name: snow_depth
+        description: Placeholder  
+
+      - name: water_equivalent_of_snow_on_ground
+        description: Placeholder  
+
+      - name: water_equivalent_of_snowfall
+        description: Placeholder  
+
+      - name: fog_or_ice_fog_or_freezing_fog_flag
+        description: Placeholder  
+
+      - name: heavy_fog_or_heaving_freezing_fog_flag
+        description: Placeholder  
+
+      - name: thunder_flag
+        description: Placeholder  
+
+      - name: ice_pellets_or_sleet_or_snow_pellets_or_small_hail_flag
+        description: Placeholder  
+
+      - name: hail_flag
+        description: Placeholder  
+
+      - name: glaze_or_rime_flag
+        description: Placeholder  
+
+      - name: dust_or_volcanic_ash_or_blowing_dust_or_blowing_sand_or_blowing_obstruction_flag
+        description: Placeholder  
+
+      - name: smoke_or_haze_flag
+        description: Placeholder  
+
+      - name: blowing_or_drifting_snow_flag
+        description: Placeholder  
+
+      - name: tornado_or_waterspout_or_funnel_cloud_flag
+        description: Placeholder  
+
+      - name: high_or_damaging_winds_flag
+        description: Placeholder  
+
+      - name: is_current_version
+        description: Placeholder  
