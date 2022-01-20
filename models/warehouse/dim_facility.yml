@@ -1,5 +1,5 @@
 version: 2
-
+ 
 models:
   - name: dim_facility
     description: Dimension for the most recent information for each facility

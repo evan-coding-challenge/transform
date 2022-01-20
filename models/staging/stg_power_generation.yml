@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_power_generation
+    description: Staging table for power generation 01, 02, 03, and 04 CSV files 
+    columns:
+      - name: facility_name
+        description: Name of each power generation facility  
+
+      - name: facility_kw_rating
+        description: KW rating for each facility 
+
+      - name: facility_kwh_generated
+        description: KWH generated at each facility 
+
+      - name: power_generation_date
+        description: Date associated for each record 
+
+      - name: power_generation_date_year_month
+        description: Date associated for each record, rolled up to the year-month  
+
+      - name: facility_generated
+        description: Generated at each facility
+
+      - name: facility_location
+        description: Location of each facility 
+
+      - name: is_current_version
+        description: Whether the row is the most recent version for each facility, with the most recent being 1

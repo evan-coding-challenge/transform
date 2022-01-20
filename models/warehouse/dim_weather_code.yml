@@ -12,7 +12,7 @@ models:
 
       - name: weather_code
         description: Codes for weather events 
-        tests:
+        tests: 
             - not_null 
             - unique
 

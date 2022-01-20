@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_weather_codes
+    description: Staging table for the weather codes CSV file 
+    columns:
+      - name: weather_code
+        description: Four-digit weather code  
+
+      - name: weather_code_name
+        description: Description for each weather code  
