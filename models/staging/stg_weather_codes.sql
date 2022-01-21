@@ -1,6 +1,6 @@
 with weather_codes as (
 
-    select * from {{ ref('weather_codes') }}
+    select * from {{ ref('snapshot_weather_codes') }}
 
 )
 ,

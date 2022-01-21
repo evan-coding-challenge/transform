@@ -1,12 +1,12 @@
 with power_generation as (
 
-    select * from {{ ref('power_generation_01') }}
+    select * from {{ ref('snapshot_power_generation_01') }}
     union 
-    select * from {{ ref('power_generation_02') }}
+    select * from {{ ref('snapshot_power_generation_02') }}
     union 
-    select * from {{ ref('power_generation_03') }}
+    select * from {{ ref('snapshot_power_generation_03') }}
     union 
-    select * from {{ ref('power_generation_04') }}
+    select * from {{ ref('snapshot_power_generation_04') }}
 
 )
 ,
