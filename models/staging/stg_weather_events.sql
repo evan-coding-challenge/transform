@@ -1,6 +1,9 @@
 with weather as (
 
-    select * from {{ ref('snapshot_weather') }}
+    select * from {{ ref('weather') }}
+
+    -- Issues with getting the snapshot_weather snapshot to work 
+    -- select * from {{ ref('snapshot_weather') }}
 
 )
 ,
