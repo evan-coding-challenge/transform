@@ -49,7 +49,6 @@ final as (
         sum(high_or_damaging_winds_flag) as total_instances_of_high_or_damaging_winds
 
     from weather_events 
-    where is_current_version = 1
 
     {{ dbt_utils.group_by(n=3) }}
 

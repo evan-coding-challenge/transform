@@ -38,7 +38,7 @@ calculated as (
 
 
     from power_generation 
-    where is_current_version = 1
+
 )
 ,
 final as (
