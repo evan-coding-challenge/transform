@@ -55,7 +55,6 @@ final as (
 
     -- Inner join to fact_power_generation and left join to fact_weather_events so 
     -- that station/facility data stays the same and weather event data repeats
-
     inner join fact_power_generation
     on dim_date.date_id = fact_power_generation.date_id
 
