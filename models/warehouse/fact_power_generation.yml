@@ -14,7 +14,6 @@ models:
         description: Unique ID for facilities 
         tests:
             - not_null 
-            - unique
             - relationships:
                 to: ref('dim_facility')
                 field: facility_id
